@@ -1,0 +1,24 @@
+errores:
+  camposVacios:
+    codigo: "Cod001"
+    Mensaje: "Campos no pueden estar vacios"
+
+  camposNulos:
+    codigo: "Cod002"
+    mensaje: "Campos no pueden estar nulos"
+
+  registroNoExiste:
+    codigo: "Cod003"
+    mensaje: "No existe el registro"
+
+  correoExiste:
+    codigo: "Cod004"
+    mensaje: "Correo ya esta registrado"
+
+  correoNoCumpleFormato:
+    codigo: "Cod005"
+    mensaje: "Correo no cumple formato"
+
+  passwordNoCumpleRequisitos:
+    codigo: "Cod006"
+    mensaje: "Password no cumple con las condiciones minimas de largo, una mayuscula y numeros"
