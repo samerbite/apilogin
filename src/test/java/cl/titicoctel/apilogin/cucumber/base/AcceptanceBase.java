@@ -7,15 +7,12 @@ import org.springframework.web.client.RestTemplate;
 
 @ContextConfiguration
 public class AcceptanceBase {
-    private final String SERVER_URL = "http://localhost/titicoctel";
+    private final String SERVER_URL = "http://localhost:8080/titicoctel";
     private final String THINGS_ENDPOINT = "/registro";
-
-    @LocalServerPort
-    private int port;
     protected RestTemplate restTemplate = new RestTemplate();
 
     private String thingsEndpoint() {
-        return SERVER_URL + ":" + port + THINGS_ENDPOINT;
+        return SERVER_URL + THINGS_ENDPOINT;
     }
 
     public int put(final String something) {

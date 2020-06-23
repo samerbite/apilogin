@@ -6,4 +6,4 @@ Feature: Api login funcionalidad
 
     Examples:
     | correo      | password  |
-    |"g@mail.com" | "Abcd1234"|
+    |"k@mail.com" | "Abcd1234"|
