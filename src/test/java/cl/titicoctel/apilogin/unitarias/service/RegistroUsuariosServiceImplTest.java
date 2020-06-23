@@ -1,24 +1,21 @@
-package cl.titicoctel.apilogin.service;
+package cl.titicoctel.apilogin.unitarias.service;
 
 import cl.titicoctel.apilogin.Dto.RegistroRequest;
 import cl.titicoctel.apilogin.Dto.RegistroResponse;
+import cl.titicoctel.apilogin.service.RegistroUsuariosServiceImpl;
 import cl.titicoctel.apilogin.model.Usuarios;
 import cl.titicoctel.apilogin.repository.RegistroUsuariosRepository;
 import io.jsonwebtoken.lang.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import org.springframework.data.domain.Example;
+import org.mockito.*;
 import org.springframework.http.ResponseEntity;
 
 import java.sql.Timestamp;
 import java.util.Date;
 
 public class RegistroUsuariosServiceImplTest {
-
+    @Spy
     @InjectMocks
     private RegistroUsuariosServiceImpl registroUsuariosService;
 
