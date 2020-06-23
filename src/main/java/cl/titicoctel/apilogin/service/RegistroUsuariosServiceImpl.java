@@ -81,8 +81,6 @@ public class RegistroUsuariosServiceImpl implements RegistroUsuariosService {
         Matcher mather = pattern.matcher(pass);
         if (mather.find() == true){
             password = true;
-        }else{
-            throw new NullPointerException("");
         }
         return password;
     }
